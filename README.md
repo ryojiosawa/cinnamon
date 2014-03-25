@@ -8,7 +8,8 @@ Cinnamon is a Force.com native app that enables you to build and execute Seleniu
 * Provide PageObject support to help develop maintainable test code to interact with your Visualforce pages
 
 ##Install
-Cinnamon requiers installing the following two pacakges.
+Cinnamon requiers installing the following two pacakges
+
 1. Install [Apex Selenium package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t30000001I916)
 2. Install [Cinnamon package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04td0000000N0pW)
 
