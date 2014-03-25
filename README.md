@@ -18,6 +18,10 @@ Cinnamon requiers installing the following two pacakges.
 
 * Selenium Proxy URL `ondemand.saucelabs.com`
 * Selenium Port `80`
+* Sauce Username `<Your Sauce Username>`
+* Sauce Access Key `<Your Sauce Access Key>`
+
+*Click [here](https://saucelabs.com/signup) to sign up a Free Sauce Labs account if you don't have one.
 
 ![](https://raw.githubusercontent.com/ryojiosawa/cinnamon/master/img/cinnamon_settings.png)
 
