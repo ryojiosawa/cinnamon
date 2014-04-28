@@ -1,9 +1,9 @@
-<!doctype html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Cinnamon by ryojiosawa</title>
+    <title>Cinnamon</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -12,6 +12,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+
   <body>
     <div class="wrapper">
       <header>
@@ -20,49 +21,89 @@
 
         <p class="view"><a href="https://github.com/ryojiosawa/cinnamon">View the Project on GitHub <small>ryojiosawa/cinnamon</small></a></p>
 
-
         <ul>
-          <li><a href="https://github.com/ryojiosawa/cinnamon/tree/gh-pages">View On <strong>GitHub</strong></a></li>
+          <li><a href="/news/"><strong>News</strong></a></li>
+          <li><a href="/docs/"><strong>Docs</strong></a></li>
+          <li><a href="https://github.com/ryojiosawa/cinnamon/issues"><strong>Issues</strong></a></li>
         </ul>
       </header>
+
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h2>Welcome to Cinnamon Pages.</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+          <p>Cinnamon is a Force.com native app that enables you to build and execute Selenium-based GUI tests from within your Salesforce org to validate Visualforce pages in your Salesforce org.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+          <ul>
+            <li>Create and execute Selenium Tests from within your Salesforce org</li>
+            <li>Out-of-box integration with Sauce Labs which provides comprehensive OS/Browser coverage</li>
+            <li>Connect to any of your Salesforce DE or Sandbox org via OAuth authentication</li>
+            <li>Provide PageObject support to help develop maintainable test code to interact with your Visualforce pages</li>
+          </ul>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+          <h2>Install Cinnamon</h2>
+          <p>Cinnamon requiers installing the following two pacakges.  Click the links below to install these pacakges after logging to your Salesforce org</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+          <ol>
+            <li>Install <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t30000001I916">Apex Selenium package</a></li>
+            <li>Install <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04td0000000N0pW">Cinnamon package</a></li>
+          </ol>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+          <h2>Setup</h2>
+          <p>Follow the steps below to set up Cinnamon in your org</p>
+          <ol>
+            <li>Select Cinnamon from App dropdown</li>
+            <li>Go to <code>Setting</code> tab and provide the following Selenium config settings and enter your Sauce Labs username and access key<p>
+              <img src="/images/cinnamon_settings.png" atl="Cinnamon Settings"/><br>
+              Click <a href="https://saucelabs.com/signup">here</a> to sign up a Free Sauce Labs account if you don't have one.</p>
+            </li>
+            <li>Go to <code>Remote Site Settings</code> and update <code>self</code> setting to point to your Salesforce instance<p>
+              <img src="/images/self_remote_site.png" atl="Remote Site Settings"/><br>
+              You can find your instance by checking the URL of your org. For example, if the URL is https://na15.salesforce.com, your org resides in na15 instance.<p>
+            </li>
+            <li>Go back to "Settings" tab and connect to your Org Under Test
+              <ol>
+                <li>Click <code>Connect to Your Org Under Test button</code>
+                  <p><img src="/images/org_under_test.png" atl="Org Under Test"/><br></p>
+                </li>
+                <li>Login to Your Org Under Test and click <code>Allow</code> button
+                  <p><img src="/images/login_dialogue.png" atl="Login Dialogue"/><br></p>
+                </li>
+                <li>After authentication is complete successfully, you will see Cinnamon being connected to your Org Under Test
+                  <p><img src="/images/org_under_test2.png" atl="Connected Org Under Test"/><br></p>
+                </li>
+                <li>Now, all setups are done and you are ready to run a Cinnamon test!</li>
+              </ol>
+            </li>
+          </ol>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+          <h2>Run a sample Cinnamon Test</h2>
+          <ol>
+            <li>Go to <code>Setup -> Develop -> Apex Classes</code> and create a new Class <code>TestSampleCinnamonTest</code> and paste the following 
+              <a href="https://gist.github.com/ryojiosawa/9750540">sample code</a>
+            </li>
+            <li>Go to Test Console tab
+              <p><img src="/images/testconsole.png" atl="Test Console"/><br></p>
+            </li>
+            <li>Select TestSampleCinnamonTest and click Execute Test button
+            </li>
+            <li>The sample test executed successfully
+              <p><img src="/images/test_passed.png" atl="Test Result"/><br></p>
+            </li>
+            <li>Click <code>Pass</code> link to view the test execution detail.
+              <p><img src="/images/testdetail.png" atl="Test Execution Detail Page"/><br></p>
+            </li>
+          </ol>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+          <h2>Issues/Bugs</h2>
+          <p>Use <a href="https://github.com/ryojiosawa/cinnamon/issues">Github Issues</a> to log and track issues and bugs</p>
       </section>
+
       <footer>
         <p>This project is maintained by <a href="https://github.com/ryojiosawa">ryojiosawa</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+
     <script src="javascripts/scale.fix.js"></script>
     
   </body>

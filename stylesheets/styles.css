@@ -2,7 +2,7 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:40px;
 }
 
 h2 {
@@ -142,7 +142,7 @@ strong {
   color:#222;
   font-weight:700;
 }
-
+/*
 header ul li + li {
   width:88px;
   border-left:1px solid #fff;
@@ -152,6 +152,7 @@ header ul li + li + li {
   border-right:none;
   width:89px;
 }
+*/
 
 header ul a strong {
   font-size:14px;
