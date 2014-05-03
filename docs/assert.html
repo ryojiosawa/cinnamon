@@ -4,7 +4,7 @@
 	<link rel='stylesheet' type='text/css' href='SfApexDoc.css' /> 
 	<script>
 		$(document).ready(function() {
-			//$('.toggle_container').hide();
+			$('.toggle_container').hide();
 			$('h2.trigger').click(function() {
 				$(this).toggleClass('active').next().slideToggle('fast');
 				ToggleBtnLabel(this.firstChild);return false; 
@@ -22,15 +22,7 @@
 </head>
 
 <body>
-	<div class='topSection'>
-		<table>
-			<tr>
-				<td>
-					<img id='logo' src='logo.png'/>
-				</td>
-			</tr>
-		</table>
-	</div>
+	<div class='topSection'></div>
 	<table width='100%'>
 		<tr>
 			<td class='leftmenus' rowspan='100'>
@@ -61,7 +53,7 @@
 					</tr>
 				</table>
 				<h2 class='section-title methods'>Methods</h2>
-				<h2 class='trigger active'><input type='button' value='-'/>&nbsp;&nbsp;<a href='#'>assert</a></h2>
+				<h2 class='trigger'><input type='button' value='+'/>&nbsp;&nbsp;<a href='#'>assert</a></h2>
 				<div class='toggle_container'>
 					<div class='toggle_container_subtitle'>global static void <a href='assert.html'>assert</a>(<a href='http://www.salesforce.com/us/developer/docs/apexcode/Content/langCon_apex_primitives.htm'>String</a> message, <a href='http://www.salesforce.com/us/developer/docs/apexcode/Content/langCon_apex_primitives.htm'>Boolean</a> assertThis)
 					</div>
