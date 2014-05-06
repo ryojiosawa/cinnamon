@@ -7,5 +7,5 @@
 ### Beta v.50 Add Implicit Waits (April 22, 2014)
 * Support Implicit Waits for `WebElement.getText` and `WebElement.sendKeys` methods
 
-### Beta v.45 Defect Fixes (April 17, 2014)
+### Beta v.45 Add new Context and OrgUnderTest classes (April 17, 2014)
 * Add new `Context` and `OrgUnderTest` classes to replace `CN_Context` and `CN_OrgUnderTest`
