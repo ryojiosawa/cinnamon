@@ -1,3 +1,5 @@
+#Cinnamon Github repo has moved!  Please visit the new [Cinnamon](https://github.com/forcedotcom/cinnamon/blob/master/README.md) repo for any new contents and updates:
+
 #Cinnamon
 
 Cinnamon is a Force.com native app that enables you to build and execute Selenium-based GUI tests from within your Salesforce org to validate Visualforce pages in your Salesforce org.
